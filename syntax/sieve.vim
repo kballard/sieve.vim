@@ -4,8 +4,8 @@
 " Maintainer:	Michael M. Tung <michael.tung at uni-mainz.de>
 " Last Change:	Thu Feb 19 18:10:44 CET 2004
 
-" The sieve syntax file is based on 'Sieve: A Mail Filtering
-" Language" (RFC3028) by The Internet Society 2001.
+" The sieve syntax file is based on 'Sieve: An Email Filtering
+" Language" (RFC5228) by The IETF Trust 2008.
 " This syntax file is still in development. Please send suggestions
 " to the maintainer.
 
@@ -21,11 +21,11 @@ syn case ignore
 
 " sieve keywords
 syn keyword sieveStatement	false fileinto not size true
-syn keyword sieveStatement	allof anyof exists 
-syn keyword sieveIdentifier	header address envelope 
+syn keyword sieveStatement	allof anyof exists
+syn keyword sieveIdentifier	header address envelope
 syn keyword sieveStatement	keep discard redirect reject
 syn keyword sieveStatement	require stop
-syn keyword sieveConditional	if elseif else frontis
+syn keyword sieveConditional	if elsif else
 
 " pattern matching for comments
 syn match   sieveComment	"^\ *\#.*$"
